@@ -41,6 +41,9 @@ Consists BN-cGWAS results filtered by p-value<1e-6. GC correction was applied. G
 - uGWAS_snps_from_paper:
 Consists uGWAS results for all SNPs mentioned in paper. GC correction wasn't applied.
 
+- RData: 
+Consists the same results for GGM-cGWAS, BN-cGWAS, uGWAS but in .RData format suitable for main cGWAS function.
+
 
 ### Matrices
 
@@ -57,4 +60,4 @@ Scripts are located in "scripts" folder.
 
 - figure2_corrplot.R: in case you want to produce the same beautiful pictures as Figure 2, feel free to use some code of this script ;)
 
-- exact_cGWAS.R: the main function for calculation of cGWAS using uGWAS results and correlation matrices. All descriptions are in file. 
+- exact_cGWAS_functions.R: the main function for calculation of cGWAS using uGWAS results and correlation matrices. All descriptions are in file. 
