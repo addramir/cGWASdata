@@ -1,0 +1,3 @@
+load("/Users/tsepilov/Yandex.Disk.localized/Work/Projects/multivarate project_2013_2015/data/cGWAS/cGWAS/C2.RData")
+ls()
+Zx
