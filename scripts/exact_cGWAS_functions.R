@@ -2,6 +2,9 @@
 ########### Yakov Tsepilov
 ########### last maintained: 10.11.2016
 
+# This file consist several fucntions used to calculate cGWAS results. 
+
+
 #core functions
 	#betas
 	.b=function(response,pred,S){
@@ -38,6 +41,19 @@ ReadCovariates=function(covariates,path2data,suffix=".txt"){
 		}
 	}
 }
+
+# The main function. It uses uGWAS results stored in .RData format. 
+# CovM - covariance matrix of response vairable and covariates
+# all_varg - the vector of variances of studied SNPs
+# response - the name of response variable
+# N - sample size
+# covariates - the list of covariates
+# cn_* - column names
+# output_threshold - the threshold for p-value filter for storing of outputs
+# gut_snps - the list of SNPs that should be used in anlisys (in case you want to filter them)
+# all_CR - call rate for each SNP
+# correction - should be GC correction applied?
+# path_uGWAS - path to uGWAS in .RData format
 
 exact_cGWAS=function(CovM,all_varg,response,N,covariates=NULL,
 	cn_b="beta_SNP",cn_snp="SNP",cn_se="se_SNP",
@@ -189,6 +205,9 @@ exact_cGWAS=function(CovM,all_varg,response,N,covariates=NULL,
 	cat("Finished. Enjoy=)","\n")
 	return(output)
 }
+
+
+###### Technical functions bellow
 
 ####clumping
 function_for_making_full_table_without_gcv = function(pathRData,thr=5e-8,delta=2.5e5,list_of_phe=NULL){
