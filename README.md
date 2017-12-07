@@ -27,7 +27,7 @@ chr	SNP	pos	A1	A2	freq	R2_impute_info	hw	varg_1785
 ```
 where chr is chromosome; SNP - SNP name; pos - position (r37 assembly); A1 - effective allele; A2 - reference allele; freq - effective allele frequency; R2_imputie_info - imputation quality; hw - Hardy-Weinberg equilibrium P-value; varg_1785 - exact variance of the SNP (needed for calculation of cGWAS).
 
-#### Folders
+### Folders
 
 - uGWAS:
 Consists univariate GWAS results filtered by p-value<1e-6. GC correction wasn't applied.
