@@ -40,3 +40,14 @@ Consists BN-cGWAS results filtered by p-value<1e-6. GC correction was applied. G
 
 - uGWAS_snps_from_paper:
 Consists uGWAS results for all SNPs mentioned in paper. GC correction wasn't applied.
+
+
+### Matrices
+
+- 20171207_corr_matrix.txt: pearson correalation matrix for 151 metabolites.
+
+- 20171207_partial_corr_matrix.txt: partial correalation matrix for 151 metabolites. We used "ppcor" R package for calculations.
+
+- 20171207_partial_corr_pvalues_matrix.txt: partial correalation p-value matrix for 151 metabolites.
+
+- 20171207_biochemical_distances.txt: biochemical distanses used for BN-cGWAS. This matrix was produced in work of Krumsiek et.al, 2011 (Krumsiek, J., Suhre, K., Illig, T., Adamski, J., & Theis, F. J. (2011). Gaussian graphical modeling reconstructs pathway reactions from high-throughput metabolomics data. BMC Systems Biology, 5(1), 21. https://doi.org/10.1186/1752-0509-5-21).
