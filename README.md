@@ -27,11 +27,16 @@ chr	SNP	pos	A1	A2	freq	R2_impute_info	hw	varg_1785
 ```
 where chr is chromosome; SNP - SNP name; pos - position (r37 assembly); A1 - effective allele; A2 - reference allele; freq - effective allele frequency; R2_imputie_info - imputation quality; hw - Hardy-Wainberg eqilibrium P-value; varg_1785 - exact variance of the SNP (needed for calculation of cGWAS).
 
+#### Folders
+
 - uGWAS:
 Consists univariae GWAS results filtered by p-value<1e-6. GC correction wasn't applied.
 
 - GGM-cGWAS:
-Consists GGM-cGWAS results filtered by p-value<1e-6. GC correction was applied.
+Consists GGM-cGWAS results filtered by p-value<1e-6. GC correction was applied. GC Lambdas are stored in "GGM_cGWAS_gc_lambda.txt" file.
 
 - BN-cGWAS:
-Consists BN-cGWAS results filtered by p-value<1e-6. GC correction was applied.
+Consists BN-cGWAS results filtered by p-value<1e-6. GC correction was applied. GC Lambdas are stored in "BN_cGWAS_gc_lambda.txt" file.
+
+- uGWAS_snps_from_paper:
+Consists uGWAS results for all SNPs mentioned in paper. GC correction wasn't applied.
