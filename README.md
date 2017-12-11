@@ -70,6 +70,6 @@ Scripts are located in "scripts" folder.
 If you use the exact_cGWAS_functions.R and the other procedures, respectively,
 please cite:
 
-	Tsepilov, Y. A., Sharapov, S. Z., Zaytseva, O. O., Krumsiek, J., Prehn, C., Adamski, J., … Aulchenko, Y. S. (2017). Network based conditional genome wide association analysis of human metabolomics. Submitted
+Tsepilov, Y. A., Sharapov, S. Z., Zaytseva, O. O., Krumsiek, J., Prehn, C., Adamski, J., … Aulchenko, Y. S. (2017). Network based conditional genome wide association analysis of human metabolomics. Submitted
 
-	/TODO : Yakov please check the reference
+/TODO : Yakov please check the reference
