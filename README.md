@@ -32,19 +32,19 @@ where chr is chromosome; SNP - SNP name; pos - position (r37 assembly); A1 - eff
 ### Folders
 
 - uGWAS:
-Stores files with univariate GWAS results filtered by p-value < 1e-6. GC correction wasn't applied.
+Stores files with univariate GWAS results filtered by P-value<1e-6. Genomic control (GC) correction wasn't applied.
 
 - GGM-cGWAS:
-Stores GGM-cGWAS results filtered by p-value < 1e-6. GC correction was applied. GC Lambdas are stored in "GGM_cGWAS_gc_lambda.txt" file.
+Stores GGM-cGWAS results filtered by P-value<1e-6. GC correction was applied. GC Lambdas are stored in "GGM_cGWAS_gc_lambda.txt" file.
 
 - BN-cGWAS:
-Consists BN-cGWAS results filtered by p-value<1e-6. GC correction was applied. GC Lambdas are stored in "BN_cGWAS_gc_lambda.txt" file.
+Stores BN-cGWAS results filtered by P-value<1e-6. GC correction was applied. GC Lambdas are stored in "BN_cGWAS_gc_lambda.txt" file.
 
 - uGWAS_snps_from_paper:
-Consists uGWAS results for all SNPs mentioned in paper. GC correction wasn't applied.
+Stores uGWAS results for all SNPs mentioned in the paper. GC() correction wasn't applied.
 
 - RData: 
-Consists the same results for GGM-cGWAS, BN-cGWAS, uGWAS but in .RData format suitable for main cGWAS function.
+Stores the same results for GGM-cGWAS, BN-cGWAS, uGWAS but in RData format suitable for exact_cGWAS_functions.R cGWAS function.
 
 
 ### Matrices
@@ -53,11 +53,12 @@ Consists the same results for GGM-cGWAS, BN-cGWAS, uGWAS but in .RData format su
 
 - 20171207_partial_corr_matrix.txt: partial correlation matrix for 151 metabolites. We used "ppcor" R package for calculations.
 
-- 20171207_partial_corr_pvalues_matrix.txt: partial correlation p-value matrix for 151 metabolites.
+- 20171207_partial_corr_pvalues_matrix.txt: partial correlation P-value matrix for 151 metabolites.
 
 - 20171207_biochemical_distances.txt: biochemical distances used for BN-cGWAS. This matrix was produced in work of Krumsiek et.al, 2011 (Krumsiek, J., Suhre, K., Illig, T., Adamski, J., & Theis, F. J. (2011). Gaussian graphical modeling reconstructs pathway reactions from high-throughput metabolomics data. BMC Systems Biology, 5(1), 21. https://doi.org/10.1186/1752-0509-5-21).
 
 ### Scripts
+
 Scripts are located in "scripts" folder.
 
 - exact_cGWAS_functions.R: the main function for calculation of cGWAS using uGWAS results and correlation matrices. All descriptions are in file. 
