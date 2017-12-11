@@ -12,10 +12,8 @@ The results of the paper were obtained from analysis of GWAS summary data (for m
 All gwas stored in text files with headings:
 
 ```
-| SNP        | beta              | se                 | Z                | P                    | 
-|------------|-------------------|--------------------|------------------|----------------------| 
-| rs11224105 | 0.176564410328865 | 0.0338255949318409 | 5.21984641170821 | 1.79071572930154e-07 | 
-
+SNP	beta	se	Z	P
+rs11224105	0.176564410328865	0.0338255949318409	5.21984641170821	1.79071572930154e-07
 ```
 
 where SNP is the marker name; beta - effect size;  se - standard error of the beta; Z - Z-value (beta/se); P - P-value.
