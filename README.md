@@ -64,3 +64,12 @@ Scripts are located in "scripts" folder.
 - exact_cGWAS_functions.R: the main function for calculation of cGWAS using uGWAS results and correlation matrices. All descriptions are in file. 
 
 - figure2_corrplot.R: in case you want to produce the same beautiful pictures as Figure 2, feel free to use some code of this script ;)
+
+### Citation
+
+If you use the exact_cGWAS_functions.R and the other procedures, respectively,
+please cite:
+
+	Tsepilov, Y. A., Sharapov, S. Z., Zaytseva, O. O., Krumsiek, J., Prehn, C., Adamski, J., … Aulchenko, Y. S. (2017). Network based conditional genome wide association analysis of human metabolomics. Submitted
+
+	/TODO : Yakov please check the reference
