@@ -1,17 +1,21 @@
 # cGWASdata
-This repository consists all data and code necessary for reproducing all results of cGWAS paper (doi:https://doi.org/10.1101/096982).
+
+The repository stores all code and data necessary for reproducing all results of cGWAS paper (doi:https://doi.org/10.1101/096982).
 
 ## Data description
 
-The results of the paper was achieved using gwas summary data (for more details see paper).
-"Data" folder consist gwas summary data, SNP information file and correlation matrices. "Scripts" folder consists functions for applying cGWAS to summary gwas data (description in file).
+The results of the paper were obtained from analysis of GWAS summary data (for more details see paper).
+"Data" folder stores GWAS summary data, SNP information file and correlation matrices. "Scripts" folder stores R functions for applying cGWAS to summary gwas data (description in the file). / TODO: provide path to the file
 
 ### GWAS summary data
+
 All gwas stored in text files with headings:
 
 ```
-SNP	beta	se	Z	P
-rs11224105	0.176564410328865	0.0338255949318409	5.21984641170821	1.79071572930154e-07
+| SNP        | beta              | se                 | Z                | P                    | 
+|------------|-------------------|--------------------|------------------|----------------------| 
+| rs11224105 | 0.176564410328865 | 0.0338255949318409 | 5.21984641170821 | 1.79071572930154e-07 | 
+
 ```
 
 where SNP is the marker name; beta - effect size;  se - standard error of the beta; Z - Z-value (beta/se); P - P-value.
@@ -30,10 +34,10 @@ where chr is chromosome; SNP - SNP name; pos - position (r37 assembly); A1 - eff
 ### Folders
 
 - uGWAS:
-Consists univariate GWAS results filtered by p-value<1e-6. GC correction wasn't applied.
+Stores files with univariate GWAS results filtered by p-value < 1e-6. GC correction wasn't applied.
 
 - GGM-cGWAS:
-Consists GGM-cGWAS results filtered by p-value<1e-6. GC correction was applied. GC Lambdas are stored in "GGM_cGWAS_gc_lambda.txt" file.
+Stores GGM-cGWAS results filtered by p-value < 1e-6. GC correction was applied. GC Lambdas are stored in "GGM_cGWAS_gc_lambda.txt" file.
 
 - BN-cGWAS:
 Consists BN-cGWAS results filtered by p-value<1e-6. GC correction was applied. GC Lambdas are stored in "BN_cGWAS_gc_lambda.txt" file.
@@ -58,6 +62,6 @@ Consists the same results for GGM-cGWAS, BN-cGWAS, uGWAS but in .RData format su
 ### Scripts
 Scripts are located in "scripts" folder.
 
-- figure2_corrplot.R: in case you want to produce the same beautiful pictures as Figure 2, feel free to use some code of this script ;)
-
 - exact_cGWAS_functions.R: the main function for calculation of cGWAS using uGWAS results and correlation matrices. All descriptions are in file. 
+
+- figure2_corrplot.R: in case you want to produce the same beautiful pictures as Figure 2, feel free to use some code of this script ;)
