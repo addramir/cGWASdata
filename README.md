@@ -5,7 +5,7 @@ The repository stores all code and data necessary for reproducing all results of
 ## Data description
 
 The results of the paper were obtained from analysis of GWAS summary data (for more details see paper).
-"Data" folder stores GWAS summary data, SNP information file and correlation matrices. "Scripts" folder stores R functions for applying cGWAS to summary gwas data (description in the file). / TODO: provide path to the file
+"Data" folder stores GWAS summary data, SNP information file and correlation matrices. "Scripts" folder stores R functions for applying cGWAS to summary gwas data. 
 
 ### GWAS summary data
 
@@ -70,6 +70,4 @@ Scripts are located in "scripts" folder.
 If you use the exact_cGWAS_functions.R and the other procedures, respectively,
 please cite:
 
-Tsepilov, Y. A., Sharapov, S. Z., Zaytseva, O. O., Krumsiek, J., Prehn, C., Adamski, J., … Aulchenko, Y. S. (2017). Network based conditional genome wide association analysis of human metabolomics. Submitted
-
-/TODO : Yakov please check the reference
+Tsepilov, Y. A., Sharapov, S. Z., Zaytseva, O. O., Krumsiek, J., Prehn, C., Adamski, J., … Aulchenko, Y. S. (2017). A network-based conditional genetic association analysis of the human metabolome. Submitted
